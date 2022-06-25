@@ -147,7 +147,7 @@ async def play(_, message: Message):
     username = message.from_user.first_name
     checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
     if await is_on_off(1):
-        LOG_ID = "-100156899495"
+        LOG_ID = "-1001640238494"
         if int(chat_id) != int(LOG_ID):
             return await message.reply_text(
                 f"الـبوت تـحـت الـتحـديث نـتـاسـف للازعاج!"
@@ -280,7 +280,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Audio Yang Dipilih Dari Telegram"
-        link = "https://t.me/bar_lo0o"
+        link = "https://t.me/EITHON1"
         thumb = "cache/Audio.png"
         videoid = "smex1"
     elif url:
@@ -402,7 +402,7 @@ async def play(_, message: Message):
 
 ** 👇 • مثال كالأتي • 👇**
 
-`تشغيل او شغل او اليوت + أسم المقطع الصوتي 🎧`
+`تشغيل او شغل او ايثون + أسم المقطع الصوتي 🎧`
 """,
             )
             return
@@ -432,7 +432,7 @@ async def play(_, message: Message):
             return await mystic.edit_text(
                 f"لم يتم العثور علي الاغنيه.\n**سبب محتمل:** {e}"
             )
-        thumb ="https://telegra.ph/file/50f5cfbd494b902b74f1a.jpg"
+        thumb ="https://telegra.ph/file/8efbe93b81985bb648d95.jpg"
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await mystic.edit( 
             f"**برجاء اختيار الموسيقي المطلوبه من خلال الأزرار بالأسفل يفضل دايما اختيار رقم (1)  • 🎶👇 **\n\n¹ <b>{title1[:27]}</b>\n  ┗ 🎧 <u>__[My Bot](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ 🎥 __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 🎧 <u>__[My Bot](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ 🎥 __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 🎧 <u>__[My Bot](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ 🎥 __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 🎧 <u>__[My Bot](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ 🎥 __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 🎧 <u>__[My Bot](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ 🎥 __Powered by {BOT_NAME}__",    
